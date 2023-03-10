@@ -224,6 +224,15 @@ address {
   background: var(--primary-dark-background);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-title {
@@ -265,6 +274,22 @@ address {
   flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
 
+.icons-advantages {
+  width: 64px;
+  height: 64px;
+}
+
+.icons-advantages-border {
+  display: flex;
+  background-color: var(--secondary-light-background);
+  width: 264px;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 /*/---------------------------ADVANTAGES-SECTION------------------------*/
 
 /*---------------------------WORKS-SECTION-----------------------*/
@@ -303,7 +328,78 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.social-icons-team {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+.social-links-team {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-color-accent);
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-team:not(:last-child) {
+  margin-right: var(--card-set-gap);
+}
+
+.social-list-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.social-links-team:hover,
+.social-links-team:focus {
+  background-color: var(--primary-color-accent);
+}
+
 /*/---------------------------TEAM-SECTION-----------------------*/
+
+/*-----------------------CUSTOMERS-SECTION------------------------*/
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-link {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: var(--card-set-gap);
+}
+
+.customers-link:focus,
+.customers-link:hover {
+  border: 1px solid var(--primary-color-accent);
+}
+
+.customers-icon {
+  display: flex;
+  width: 104px;
+  height: 56px;
+  fill: #8e8f99;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--primary-color-accent);
+}
+
+/*/---------------------------CUSTOMERS-SECTION-----------------------*/
 
 /*-----------------------PROJECTS-SECTION------------------------*/
 
@@ -333,6 +429,9 @@ address {
 .projects-button:focus {
   background-color: var(--secondary-color-accent);
   color: var(--primary-light-background);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--secondary-color-accent);
 }
 
 .projects-objects {
@@ -350,6 +449,11 @@ address {
   border-top: none;
 }
 
+.projects-cards:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 /*/-----------------------PROJECTS-SECTION------------------------*/
 
 /*---------------------------FOOTER-----------------------*/
@@ -358,6 +462,14 @@ address {
   background-color: var(--primary-dark-background);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-about {
+  margin-right: 120px;
 }
 
 .logo-dark-background {
@@ -369,6 +481,38 @@ address {
 
   margin-top: 16px;
   width: 264px;
+}
+
+.social-link-text {
+  font-weight: 500;
+  color: var(--secondary-text-color-dark-background);
+  margin-bottom: 16px;
+}
+
+.social-links-footer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+.social-links-footer:hover,
+.social-links-footer:focus {
+  background-color: #31d0aa;
+}
+
+.social-list-footer {
+  display: flex;
+}
+
+.social-icon-footer {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-light-background);
 }
 
 /*/---------------------------FOOTER-----------------------*/

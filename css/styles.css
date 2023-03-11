@@ -221,7 +221,6 @@ address {
 
 /*---------------------------HERO-------------------------*/
 .page-hero {
-  background: var(--primary-dark-background);
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
@@ -393,8 +392,8 @@ address {
   fill: #8e8f99;
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
+.customers-link:focus .customers-icon,
+.customers-link:hover .customers-icon {
   fill: var(--primary-color-accent);
 }
 

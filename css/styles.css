@@ -388,7 +388,6 @@ address {
 }
 
 .customers-icon {
-  display: flex;
   width: 104px;
   height: 56px;
   fill: #8e8f99;
@@ -497,11 +496,14 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
-  margin-right: 16px;
 }
 .social-links-footer:hover,
 .social-links-footer:focus {
   background-color: #31d0aa;
+}
+
+.social-item-footer {
+  margin-right: 16px;
 }
 
 .social-list-footer {

@@ -232,7 +232,7 @@ address {
     url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: auto;
 }
 
 .hero-title {
@@ -345,7 +345,7 @@ address {
   justify-content: center;
 }
 
-.social-links-team:not(:last-child) {
+.social-item-team:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
 

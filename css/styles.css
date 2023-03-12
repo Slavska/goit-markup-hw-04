@@ -221,10 +221,11 @@ address {
 
 /*---------------------------HERO-------------------------*/
 .page-hero {
-  max-width: 1440px;
-  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
